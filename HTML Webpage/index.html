@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
     CSS but: Coffee, Cats, & Sleep
   </title>
@@ -13,15 +15,12 @@
       <div class="logo">
         <img src="logo.jpg">
       </div>
-        <li><a href="#coffee"> Coffee is Life</a></li>
-        <li><a href="#cats"> Cats Are a Mood</a></li>
-        <li><a href="#sleep"> Sleep Count</a></li>
+        <a href="#coffee"> Coffee is Life</a><br>
+        <a href="#cats"> Cats Are A Mood</a><br>
+        <a href="#sleep"> Sleep Count</a><br>
     </ul>
-    <div class="rightNav">
-      <input type="text" name="Search" id="Search">
-      <button class="btn btn-sm">Search It</button>
-    </div>
   </nav>
+  <table>
   <section class="firstsection">
     <div class="box-main">
       <div class="firstHalf">
@@ -29,16 +28,99 @@
           Coffee is Life
         </h1>
         <p class="text-small">
-          Coffee is life because I said it is. I do not think I need to say more, but I will so that this makes a bigger paragraph for the website you're reading. 
-        </p><hr>
-      </div>
-      
+          Coffee is life because I said it is. I do not think I need to say more, but I will so that this makes a bigger paragraph for the website you're reading. Do you agree that Coffee is life?
+        </p>
+        <form id="form">
+          <div class="form-control">
+            <label for="Yes or No" id="label-role">
+              Select Your Answer
+            </label>
+        <select name="Yes or No" id="label-role">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          <option value="maybe">Maybe</option>
+          <option value="other">Other</option>
+          <textarea name="comment" id="comment" placeholder="Specify Other"></textarea>
+
+        </select>
+          </div><hr>
+      </div> 
   </div>
   </section>
+  <section class="secondsection">
+    <div class="box-main">
+      <div class="secondHalf">
+        <h1 class="text-big" id="cats">
+          Cats Are A Mood
+        </h1>
+        <p class="text-small">
+          Cats are a mood because if you look at them - that's a mood. If you don't look at them - well that is also a mood. Do you get where I'm going with this? 
+          <br />
+          <form id="form">
+            <div class="form-control">
+              <label for="Yes or No" id="label-role">
+                Select Your Answer
+              </label>
+        <select name="Yes or No" id="label-role">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          <option value="maybe">Maybe</option>
+          <option value="other">Other</option>
+        </select>
+        <textarea name="comment" id="comment" placeholder="Specify Other"></textarea>
+            </div><hr>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="thirdsection">
+    <div class="box-main">
+      <div class="thirdHalf">
+        <h1 class="text-big" id="sleep">
+          Sleep Count
+        </h1>
+        <p> I know what you're thinking - why would you put this on your website? Well - there are a few options you can choose from. <br> But this is mainly so we know how many hours of sleep you're getting. So tell me - How many hours do you sleep with coffee and cats in the equation.
+        </p>
+        <form id="form">
+          <div class="checkboxes">
+            <label>Hours of Sleep
+              <small>(Select The Answer Closest to Sleep Count)</small>
+            </label><br>
+            <label><input type="checkbox"> <span> One to Two</span></label>
+                      <textarea name="Describe Your Routine" id="comment"
+                                placeholder="Describe Your Routine"></textarea>
+            <br>
+            <label><input type="checkbox"> <span> Three to Five</span></label>
+                      <textarea name="Describe Your Routine" id="comment"placeholder="Describe Your Routine"></textarea>
+            <br>
+            <label><input type="checkbox"> <span> Six to Nine</span></label>
+                      <textarea name="Describe Your Routine" id="comment"
+                                placeholder="Describe Your Routine"></textarea>
+            </label>
+            <br>
+            <label><input type="checkbox"> <span> Ten to Lazy A$$</span></label>
+                      <textarea name="Describe Your Routine" id="comment"
+                                placeholder="Describe Your Routine"></textarea>
+            </label>
+          </table>
+          </div><hr>
+        <button type="submit" value="Submit">
+          Submit
+        </button>
+        </form>
+      </div>
+    </div>
+  <div class="thumbnail">
+    <img src="clock.jpg" alt="clock image">
+    </div>
+  </div>
+  </section>
+  <footer class="background">
+    <p class="text-footer">
+      Copyright ©- All rights are Reserved for Coffee, Sleep, and Cats. 
+    </p>
+  </footer>
 </body>
 
-
-
-
-
 </html>
+
