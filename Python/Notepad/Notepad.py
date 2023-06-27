@@ -1,4 +1,5 @@
 import sys
+from Python import self
 sys.path.append('/users/maria/Documents')
 import os
 from tkinter import *
