@@ -1,8 +1,5 @@
 import sys
 sys.path.append('/users/maria/Documents')
-
-from typing import LiteralString
-import tkinter 
 import os
 from tkinter import *
 from tkinter.filedialog import askopenfilename, asksaveasfilename
@@ -104,7 +101,6 @@ def __underline(self):
 def __color(self):
     self.__thisTextArea.event_generate("<<Color>>")
 
-from ast import Pass
 import tkinter
 import os
 from tkinter import *
