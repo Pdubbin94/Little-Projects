@@ -11,13 +11,17 @@ function addItem(e) {
   e.preventDefault();
   if (submit.value != "Submit") {
       console.log("Hello");
-      editItem.target.parentNode.childNodes[0].data = document.getElementById("item").value;
+      editItem.target.parentNode.childNodes[0].data 
+        = document.getElementById("item").value;
       submit.value = "Submit";
       document.getElementById("item").value = "";
-      document.getElementById("lblsuccess").innherHTML = "Text edited successfully";
-      document.getElementById("lblsuccess").style.display = "block";
+      document.getElementById("lblsuccess").innherHTML
+         = "Text edited successfully";
+      document.getElementById("lblsuccess")
+                  .style.display = "block";
       setTimeout(function() {
-        document.getElementById("lblsuccess").style.display = "none";
+        document.getElementById("lblsuccess")
+                  .style.display = "none";
       }, 3000);
       return false;
   }
@@ -29,10 +33,12 @@ function addItem(e) {
   let li = document.createElement("li");
   li.className = "list-group-item";
   let deleteButton = document.createElement("button");
-  deleteButton.className = "btn-danger btn btn-sm float-right delete";
+  deleteButton.className = 
+      "btn-danger btn btn-sm float-right delete";
   deleteButton.appendChild(document.createTextNode("Delete"));
   let editButton = document.createElement("button");
-  editButton.className = "btn-success btn btn-sm float-right edit";
+  editButton.className =
+      "btn-success btn btn-sm float-right edit";
   editButton.appendChild(document.createTextNode("Edit"));
   li.appendChild(document.createTextNode(newItem));
   li.appendChild(deleteButton);
@@ -46,19 +52,23 @@ function removeItem(e) {
     if (confirm("Are You Sure?")) {
       let li = e.target.parentNode;
       itmes.removeChild(li);
-      document.getElementById("lblsuccess").innerHTML = "Text deleted successfully";
-      document.getElementById("lblsuccess").style.display = "block";
+      document.getElementById("lblsuccess").innerHTML
+         = "Text deleted successfully";
+      document.getElementById("lblsuccess")
+                    .style.display = "block";
       setTimeout(function() {
-        document.getElementById("lblsuccess").style.display = "none";
+        document.getElementById("lblsuccess")
+                    .style.display = "none";
       }, 3000);
     }
   }
   if (e.target.classList.contains("edit")) {
-    document.getElementById("item").value=e.target.parentNode.childNodes[0].data;
+    document.getElementById("item").value = 
+        e.target.parentNode.childNodes[0].data;
     submit.value = "EDIT";
     editItem = e;
   }
 }
 function toggleButton(ref, btnID) {
-  document.getElementById(btnID).disable = false;
+  document.getElementById(btnID).disabled = false;
 }
