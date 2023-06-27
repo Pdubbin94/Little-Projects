@@ -9,7 +9,7 @@ sign = 0
 global board
 board = [[" " for x in range(3)] for y in range(3)]
 def winner(b, 1):
-    return((b[0][0] == 1 and b[0][1] == 1 and b[0][2] == 1) or
+    return  ((b[0][0] == 1 and b[0][1] == 1 and b[0][2] == 1) or
             (b[1][0] == 1 and b[1][1] == 1 and b[1][2] == 1) or
             (b[2][0] == 1 and b[2][1] == 1 and b[2][2] == 1) or
             (b[0][0] == 1 and b[1][0] == 1 and b[2][0] == 1) or
