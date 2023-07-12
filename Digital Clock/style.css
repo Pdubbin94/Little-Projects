@@ -1,0 +1,15 @@
+#clock {
+  font-size:10rem;
+  text-align: center;
+  color: olivedrab;
+  border: 2px solid #6666;
+  padding: none;
+  display: grid;
+  cursor: pointer;
+  margin: 100px;
+  width: 700px;
+}
+clock:hover{
+  background-color: fade;
+  transform-style: #00b0b0;
+}
