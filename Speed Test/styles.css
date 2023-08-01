@@ -1,0 +1,199 @@
+html {
+  display: table;
+  margin: 100px 200px 100px 200px ;
+  width: 80%;
+  height: 100%;
+  font-family: 'Courier New';
+  vertical-align: middle;
+  text-align: center;
+}
+* {
+  scroll-behavior: smooth;
+  vertical-align: middle;
+  align-items: center;
+}
+body {
+  flex-direction: column;
+  display: table-cell;
+  vertical-align: middle;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 15px;
+  text-align: justify;
+}
+footer {
+  margin-top: 20px;
+  display: inline-block;
+  color: olivedrab;
+  vertical-align: bottom;
+  margin-bottom: -250px;
+  text-align: left;
+  margin-left: -70px;
+}
+footer:hover{
+  color: black;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_text{
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+}
+.header{
+  display: flex;
+  align-items: center;
+  vertical-align: flex;
+
+}
+.heading{
+  margin-bottom: 15px;
+  padding: 10;
+  font-size: 2rem;
+  color: olivedrab;
+  text-align: left;
+  vertical-align: middle;
+  margin-left: -110px;
+  flex-direction: row;
+  margin-left: -70px;
+}
+
+.heading:hover{
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  text-shadow: 10px yellowgreen;
+}
+.cpm, .wpm{
+  display: none;
+
+}
+.header_text{
+  font-size: 0.7rem;
+  vertical-align: middle;
+
+
+}
+.quote {
+  background-color: white;
+  font-size: 1.rem;
+  color: olivedrab;
+  margin: -20px;
+  padding: 25px;
+  text-align: left;
+
+}
+textarea { 
+ width: 350px;
+  height: 50px;
+  border-color: white;
+  border-radius: 1px;
+  box-shadow: grey 5px 8px 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 5px;
+  padding: 2px;
+  vertical-align: middle;
+}
+
+textarea:hover{
+  box-shadow: yellow 5px 8px 5px;
+  transition: 0.5s;
+}
+::placeholder{
+  outline: none;
+  background-color: white;
+  border-color: white;
+}
+placeholder:hover{
+  box-shadow: yellow 5px 8px 5px;
+  transition: 0.5s;
+}
+#input_area{
+  background-color: white;
+  height: 80px;
+  width: 40px;
+  font-size: .5rem;
+  border: 0px;
+}
+.btn{
+  box-shadow: grey 5px 8px 5px;
+  font-size: 15px;
+  background: white;
+  border-color: white;
+
+}
+btn:hover{
+  box-shadow: yellow 5px 8px 5px;
+  transition: 0.5s;
+
+}
+.restart_btn{
+  box-shadow: grey 5px 8px 5px;
+  font-size: 15px;
+  background: white;
+  border-color: white;
+  color: olivedrab;
+  width: auto;
+  margin: auto 0;
+  vertical-align: middle;
+  padding: 10px;
+  
+}
+.restart_btn:hover{
+  box-shadow: rgb(170, 49, 49) 5px 8px 5px;
+  transition:  0.1s;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: whitesmoke;
+  font-weight: bold;
+}
+.correct_char{
+  color:olivedrab
+}
+.incorrect_char{
+  color:blue;
+  text-decoration: underline;
+}
+.timer, .errors, .accuracy, .cpm, .wpm {
+  background-color: whitesmoke;
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 40% 3px olivedrab;
+  box-shadow: grey 5px 8px 5px;
+  transition: 0.5s;
+  cursor: pointer; 
+  
+}
+.curr_time, .curr_errors, .curr_accuracy, .curr_cpm, .curr_wpm {
+  font-size: 1.25rem;
+  transition: 0.5s;
+  cursor: pointer;
+  
+}
+.input_area{
+  background-color: none;
+  height: 60px;
+  width: 350px;
+  font-size: 1.rem;
+  box-shadow: grey 5px 8px 5px;
+  border: 0px;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+}
+.input_area:hover{
+  box-shadow:rgb(170, 49, 49) 5px 8px 5px;
+  color: olivedrab;
+  cursor: pointer;
+  
+}
