@@ -1,0 +1,433 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding:0px;
+  cursor: pointer;
+}
+
+#top {
+  color: rgb(39, 39, 37);
+  text-align:center;
+  font-size: 46px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: bold;
+}
+#top:hover{
+  color: olivedrab;
+}
+#top1{
+  text-align: center;
+  color: olivedrab;
+  font-size: 20px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: bold;
+}
+#top1:hover{
+  color: black;
+  text-transform: upprcase;
+}
+#navbar img{
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 3px;
+}
+#navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: olive;
+  background-blend-mode: soft-light;
+  height: 14vh;
+  width: 100vw;
+  font-family: inherit;
+  margin-top: 10px;
+  border: 2px solid olivedrab, yellow;
+  border-radius: 15px;
+}
+#navcontent {
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  box-shadow: 2px 7px 16px 1px olivedrab;
+  font-family: inherit;
+  color: black;
+}
+navbar:hover{
+  text-transform: uppercase;
+}
+ul li {
+  list-style: none;
+  margin: 0 15px 0 15px;
+  align-items: space-evenly;
+  border-radius: 20px;
+  font-size: 20px;
+  padding-bottom: 2px;
+}
+ul li a {
+  padding: 5px;
+  color: black;
+  text-shadow: white 1px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+ul li a:hover{
+  color: white;
+  background: none;
+  border-radius: 10px;
+  box-shadow: black 10px;
+  padding: 2px;
+  text-transform: uppercase;
+
+}
+#container1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 63vh;
+}
+#container1::before{
+  content:'';
+  background: url("soul.png")no-repeat center center/cover;
+  width: 100vw;
+  height: 59vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: inherit;
+  margin-right: 45px;
+  font-weight: bold;
+  z-index: -1;
+  opacity: 0.89;
+  border: 2px solid black;
+  border-bottom-left-radius: 100px;
+  box-shadow: 1px 1px 1px 1px olivedrab;
+}
+#container1:hover{
+  color: black;
+  text-transform: uppercase;
+}
+#row1{
+  color: olivedrab;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 35px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+#row1:hover{
+  color: black;
+  text-transform: uppercase;
+}
+.button{
+  margin-top: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: olivedrab;
+  font-size: 15px;
+  font-weight: normal;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  align-items: center;
+}
+.button:hover{
+  background-color: none;
+  color:black;
+  box-shadow: 1px 1px 1px 1px olivedrab;
+  cursor: pointer;
+  border-radius: 5px;
+  text-emphasis: 2px;
+  text-transform: uppercase;
+}
+#container3 {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px 1px olivedrab;
+}
+#container3:hover{
+  cursor: pointer;
+  text-transform: uppercase;
+}
+#row2{
+  width: 24vw;
+  height: 21vh;
+  box-shadow:  1px olivedrab;
+  margin-top: 51px;
+  margin-bottom: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  margin-right: 38px;
+  border-radius: 40px;
+}
+#row2::before {
+  content: '';
+  background: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24vw;
+  height: 21vh;
+  z-index: -1;
+  border-radius: 40px;
+}
+#row3{
+  position:relative;
+  width: 24vw;
+  height: 21vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 2px olivedrab;
+  margin-top: 51px;
+  margin-bottom: 51px;
+  margin-left: 38px;
+  border-radius: 40px;
+}
+#row3::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24vw;
+  height: 21vh;
+  z-index: -1;
+  border-radius: 40px;
+}
+hr{
+  border-bottom:  3px (black 50%, olive);
+  background-color: 1px olivedrab;
+}
+#top3{
+  text-align: center;
+  color: olivedrab;
+  font-family: 'Ubunto Mono', monospace;
+  padding: 20px;
+}
+#top3:hover{
+  color: black;
+  padding: 5px gold;
+  text-transform: uppercase;
+}
+#container4{
+  display: grid;
+  grid-template-columns: repeate(autofit, minmax(350px, 1fr));
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+#container4:hover{
+  text-transform: capitalize;
+  color: black;
+  padding: 10px;
+}
+#row4{
+  width: 20vw;
+  height: 360px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 15px;
+  background:url('burger.jpg')no-repeat center center/cover;
+  float: left;
+}
+#row5{
+  width: 20vw;
+  height: 360px;
+  background:url('fries.jpg')no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 15px;
+  border: 2px solid black;
+  float: right;
+}
+#row6{
+  width: 20vw;
+  height: 360px;
+  background:url('pop.jpg')no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+#row4, #row5, #row6 {
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+}
+#row4:hover, #row5:hover, #row6:hover {
+  border: 2px solid black;
+  border-image: auto;
+  padding: 20px;
+}
+footer{
+  text-align: center;
+  color: black;
+}
+footer:hover{
+  color: olivedrab;
+  padding: 10px;
+}
+title:hover{
+  color: olivedrab;
+  padding: 10px;
+}
+#ContactUs{
+  width: 80vw;
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  display: flexbox;
+  margin-left: 20px;
+  justify-content: center;
+  color: black;
+  box-sizing: border-box;
+  border-width: 1px;
+  
+}
+#ContactUs:hover{
+  color: olivedrab;
+  padding:30px;
+}
+.form-shape input, .form-shape select, .form-shape textarea{
+  width: 62%;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-top: -1px;
+  border-radius: 40px;
+  padding: 10px;
+  background: linear-gradient(45deg black, grey);
+
+}
+.form{
+  display: block;
+  font-family: 'Ubunto Mono', monospace;
+  border-radius: 45px;
+  border-color: 4px solid black;
+  font-weight: bold;
+  
+}
+.form-shape{
+  align-items: center;
+  justify-content: center;
+  margin: 20px 20px 20px 20px;
+  color: black;
+  font-size: 1.2rem;
+  
+}
+.form-shape:hover{
+  color: olivedrab;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+}
+::placeholder{
+  background-color: none;
+  color: black;
+  padding: 2px;
+}
+@media only screen and(max-width:1131px) {
+  #row4{width: 42vw;}
+  #row5{width:45vw;}
+  #row6{width:90vw; margin-top: 20px;}
+}
+@media only screen and (min-width:600px) and (max-width: 781px){
+  #row4{width: 84vw; margin:auto; margin-left: 22px;}
+  #row5{width: 84vw; margin:auto; margin-top: 20px; margin-left: 22px;}
+  #row6{width: 84vw; margin:auto; margin-top: 20px; margin-left: 22px;}
+}
+@media only screen and(max-width: 600px){
+  #row4{width: 78vw; margin: auto; margin-left: 3px;}
+  #row5{width: 78vw; margin: auto; margin-top: 20px; margin-left: 3px;}
+  #row6{width: 78vw; margin: auto; margin-top: 20px; margin-left: 3px;}
+}
+@media only screen and (min-height:1000px){
+  #navbar{ height: 10vh;}
+  #container1::before{height:39vh;}
+  #container1{height:44vh}
+}
+#radio{
+  color: olivedrab;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#radio:hover{
+  color:black;
+  padding: 5px;
+}
+.slider {
+  transition: all 0.5s ease-in-out;
+  left: 100px;
+  top: 20px;
+  background-image: linear-gradient(to right, rgb(255, 195, 000), rgb(000, 146, 91));
+  position: absolute;
+  height: 60px;
+  width: 150px;
+  border-radius: 50px;
+}
+.moveslider{
+  left: 250px;
+}
+#submit, #reset{
+  color: olivedrab;
+  font-size: 15px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  padding: 10px;
+  margin: 0px;
+  transition: all 0.5s ease-in-out;
+  top: 550px;
+}
+#submit:hover {
+  color: black;
+  font-weight: normal;
+  padding: 10px;
+  text-transform: uppercase;
+  
+}
+#reset:hover{
+  color: black;
+  font-weight: normal;
+  padding: 10px;
+  text-transform: uppercase;
+}
+#submit { 
+  margin: 5px;
+  padding-left: 5px;
+  text-align: center;
+  margin-left: -55px;
+  font-size: 16px;
+}
+#reset{
+  margin: 5px;
+  padding-left: 5px;
+  text-align: center;
+  margin-right: 55px;
+  font-size: 16px;
+
+}
+textarea{
+  height: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+  border-radius: 40px;
+  border: 2px solid black;
+}
+.placeholder:hover:hover{
+  color: olivedrab;
+  box-shadow: 2px yellowgreen;
+}
