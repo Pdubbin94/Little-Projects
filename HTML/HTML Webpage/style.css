@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+#navlist {
+  background-color: white;
+  position: fixed;
+  left: 40%;
+  top: -20px;
+  width:auto;
+  display: block;
+  transition: top 0.3s;
+}
+#navlist a{
+  color: olivedrab;
+  text-decoration: none;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 12px;
+  font-size: 15px;
+}
+#navlist a:hover{
+  color:black;
+  text-transform: uppercase;
+  background-color: #ddd;
+}
+section{
+  position: relative;
+  margin-left: 10px;
+}
